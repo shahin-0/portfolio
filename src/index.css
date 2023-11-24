@@ -1,0 +1,429 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body{
+  background-color: #111111;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.navbar{
+  margin-top: 6px;
+}
+
+.logo{
+  width: 130px;
+  height: 60px;
+  margin-top: 6px;
+  margin-left: 18px;
+}
+
+.nav-item{
+  margin-top: -6px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: semi-bold;
+}
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #9D98FE; /* Change this to your desired hover color */
+}
+
+.hamburger-open{
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 20px;
+}
+
+.hero-text-container{
+  margin-top: 150px;
+}
+
+.hero-text-1{
+  font-family: 'Poppins', cursive;
+  font-weight: bold;
+  font-size: 80px;
+  margin-left: -50px;
+}
+
+.hero-text-2{
+  font-family: 'Vujahday Script', cursive;
+  font-size: 70px;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.sub-container{
+  background-color: #9D98FE;
+  height: 70px;  
+  width: 300px;
+  margin-left: 570px;
+  border-radius: 20px;
+  position:relative;
+
+}
+.sub-title{
+  font-size: 50px;
+  font-weight: 900;
+  color: #111111;
+  margin-right: 20px;
+  position: absolute;
+  left: 10px;
+  
+}
+
+.next-button{
+  background-color: #9D98FE;
+  margin-top: -20px;
+  margin-left: 730px;
+  border-radius: 35px;
+}
+
+.hero-img{
+  width: 300px;
+  margin-left: 1160px;
+}
+
+.about-title {
+  margin-top: 31px;
+  height: 65px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: #DDFE55; /* Set initial background color */
+  border-radius: 20px;
+  animation: spreadColor 10s ease-in-out infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes spreadColor {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.about-title.scrolled {
+  background-color: #DDFE55; /* Change this to your desired color on scroll */
+  transition: background-color 1s ease; /* Transition the background-color property */
+}
+
+.about-title.scrolled::before {
+  left: 0;
+
+}
+
+.about-highlighter{
+  background-color: #DDFE55;
+  width: 140px;
+  height: 50px;
+  border-radius: 15px;
+  transition: background-color -1s ease;
+
+}
+
+.title-about{
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.title-me{
+  font-size: 35px;
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+.title-me.text-black {
+  color: black; /* Change this to your desired color on scroll */
+}
+
+.about-content{
+  margin-top: 150px;
+  margin-bottom: 170px;
+}
+
+.about-me{
+  margin-left: -65px;
+}
+
+.skillset-title {
+  font-family: 'Corinthia', cursive;
+  font-size: 60px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-right: -100px;
+  font-weight: 600;
+}
+
+.skillset-button {
+  width: 105px;
+  height: 32px;
+  color: #111111;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.skillset-container-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.skillset {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.skillset-container {
+  margin-top: -20px;
+  margin-right: -100px;
+}
+
+.work-card{
+  border: rgb(255, 255, 255) 1px solid;
+  width: 330px;
+  height: 400px;
+  margin-bottom: -40px;
+}
+
+.work-title{
+  font-size: 60px;
+  font-family: 'potta one';
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 70px;
+  padding-left: 100px;
+}
+
+.work-o{
+  color: #FF82FE;
+}
+.foot-container{
+  margin-top: 50px;
+}
+.foot-main{
+  margin-bottom: 390px;
+}
+
+.foot-title{
+  font-family: 'popins', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: -130px;
+  padding-top: 60px;
+}
+
+.button-section {
+  border: black 3px solid;
+  width: 370px;
+  border-radius: 19px;
+  height: 90px;
+  position: relative;
+  top: 180px;
+  left: 1000px;
+  perspective: 1000px; /* Set the perspective for 3D effect */
+}
+
+.foot-button {
+  background-color: #FFFFFF;
+  width: 350px;
+  height: 60px;
+  border: black 3px solid;
+  border-radius: 22px;
+  font-family: 'popins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  transform: rotateX(15deg) rotateY(0deg) translateZ(10px); /* Apply initial rotation and translation for 3D effect */
+  transition: transform 0.5s; /* Add a transition for the transform property */
+}
+
+.foot-button:hover {
+  transform: rotateX(15deg) rotateY(15deg) translateZ(10px); /* Apply a 3D translation and rotation on hover */
+}
+
+
+.contact-head{
+  font-family: 'popins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.address-section{
+  margin-left: 20px;
+}
+
+.contact-section{
+  margin-right: 20px;
+}
+
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Existing styles */
+
+/* Add the following media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .hero-text-container {
+    margin-top: 100px; /* Adjust as needed */
+  }
+
+  .hero-text-1 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .sub-title{
+    font-size: 30px;
+  }
+
+  .hero-text-2 {
+    font-size: 40px;
+  }
+
+  .sub-container {
+    width: 200px;
+    height: 40px;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    margin-left: 100px;
+    width: 200px;
+    margin-top: 50px
+  }
+
+  .next-button {
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+
+
+  .about-content {
+    grid-template-columns: 1fr; /* Switch to a single column layout on smaller screens */
+  }
+
+  .about-head-text{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .about-para{
+    font-size: 12px;
+  }
+  .about-me {
+    margin-left: 20px;
+    margin-top: -80px; /* Center about-me content on smaller screens */
+  }
+
+  .skillset-title {
+    font-size: 40px;
+  }
+  .skillset-button {
+    margin: 5px;
+    margin-bottom: 15px;
+    width: 85px;
+    height: 30px; /* Adjust spacing between skillset buttons on smaller screens */
+  }
+
+  .skill-set-body{
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+
+  .work-cards{
+    margin-left: 28px;
+  }
+
+  .work-title{
+    margin-left: -12px;
+    margin-top: -70px;
+  }
+
+  .foot-main{
+    padding-top: 20px;
+  }
+  .foot-title{
+    font-size: 60px;
+    bottom: 20px;
+  }
+
+  .button-section{
+    left: 50px;
+    bottom: 40px;
+    width: 300px;
+    height: 70px; 
+  }
+
+  .foot-button{
+    width: 285px;
+    height: 60px;
+    margin-bottom: -5px;
+  }
+
+  .contact-head{
+    font-size: 15px;
+  }
+
+  .address-section{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .address-item{
+    font-size: 12px;
+  }
+
+  .social-item{
+    font-size: 12px;
+    margin-right: 20px;
+  }
+
+  .contact-item{
+    font-size: 12px;
+  }
+
+  .head-contact{
+    margin-left: 30px;
+  }
+}
+
+/* Add more media queries for other screen sizes if needed */
+
+
